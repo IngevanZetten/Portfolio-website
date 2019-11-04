@@ -133,7 +133,7 @@ img{
 	background-color: white;
 }
 
-.skill-title{
+.skill-name{
 	text-align: center;
 }
 
@@ -347,6 +347,10 @@ img{
 		font-size: 4rem;
 	}
 
+	.header{
+		height: 800px;
+	}
+
 	.headerNaam{
 		font-size: 1.5rem;
 	}
@@ -368,7 +372,7 @@ img{
 		width: 50%;
 	}
 
-	.skill-title{
+	.skill-name{
 		font-size: 25px;
 	}
 
