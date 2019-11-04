@@ -1,0 +1,371 @@
+html{
+	scroll-behavior: smooth;
+}
+
+
+body{
+	font-family: 'Montserrat';
+}
+
+img{
+	width: 100%;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/*navigatiebalk*/
+
+.navbar{
+	background-color: black;
+	padding-right: 30px;
+}
+
+.navbar-brand{
+	color: white;
+	font-size: 1.5rem;
+	padding: 0;
+	font-family: 'Mali', cursive;
+	font-weight: bold;
+	margin-left: 15px;
+	
+}
+
+.navbar-brand:hover{
+	color: white;
+}
+
+
+.nav-item{
+	margin-left: 20px;
+	margin-right: 20px; 
+}
+
+.nav-link{
+	color: white;
+}
+
+.nav-link:hover{
+	color: #CE8C8F;
+}
+
+.fa-bars{
+	color: white;
+	font-size: 25px;
+}
+
+/*header*/
+.header{
+	background-image: -webkit-linear-gradient(180deg, white 50%, #40667C 50%);
+	height: 700px;
+	position: relative;
+	margin-top: 50px;
+}
+
+.whiteBox{
+	width: 550px;
+	height: 550px;
+	background-color: rgb(240, 219, 220);
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	transform: translate(-50%, 0);
+}
+
+.hImage{
+	width: 65%;
+	position: absolute;
+	top: 145px;
+	left: -175px;
+
+}
+
+.header-text{
+	text-align: center;
+	width: 500px;
+	position: relative;
+	left: 275px;
+}
+
+.headerHallo{
+	color: #CE8C8F;
+	font-family: 'Courgette', cursive;
+	font-size: 6rem;
+	margin-bottom: 20px;
+}
+
+.headerNaam{
+	font-family: 'Mali', cursive;
+	margin-bottom: 20px;
+	font-size: 2rem;
+}
+
+.headerParagragh{
+	font-size: 18px;
+}
+
+.headerAbout{
+	writing-mode: vertical-rl;
+	color: white;
+	text-decoration: underline;
+	background-color: #40667C;
+	padding: 30px 20px;
+	
+}
+
+.about{
+	position: absolute;
+	height: 200px;
+	bottom: -70px;
+	left: 360px;
+
+}
+
+
+/*vaardigheden*/
+
+#skills{
+	padding: 9% 10% 9%;
+	background-color: white;
+}
+
+.skill-column{
+	padding:20px;
+}
+
+.skill-container{
+	width: 100%;
+	background-color: #E9E9E9;
+}
+
+.skill {
+	text-align: right; 
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	color: white; 
+	background-color: #CE8C8F;
+	width: 0%;
+}
+
+.skill-title{
+	padding-top: 20px;
+	margin: 0;
+}
+
+
+/*portfolio*/
+
+#portfolio{
+	padding: 5% 10%;
+	text-align: center;
+	background-color: #40667C;
+}
+
+/*portfolio*/
+.column{
+	float: left;
+	width: 33.33%;
+	padding: 30px 8px;
+
+}
+
+.portfolio-title{
+	color: white;
+	padding-bottom: 20px;
+}
+
+.content{
+	background-color: white;
+	padding: 10px;
+	position: relative;
+}
+
+.product-image{
+	display: block;
+	margin-bottom: 30px;
+}
+
+.meerInfo{
+	position: relative;
+	top: -20px;
+	width: 60%;
+	padding: 8px;
+	background-color: #CE8C8F;
+	color: white;
+	border: none;
+
+}
+
+.meerInfo:hover{
+	background-color: #e8c9cb;
+}
+
+.meerInfo:focus{
+	outline: 0;
+}
+
+
+/*footer*/
+
+#footer{
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+.footer-text{
+	margin: 20px;
+}
+
+.social-icon {
+	margin: 10px 10px 5px 10px;
+	color: white;
+}
+
+/*modal*/
+.btnGithub{
+	background-color: #CE8C8F;
+	color: white;
+	border: none;
+	padding: 10px;
+	width: 35%;
+}
+
+.btnGithub:hover{
+	background-color: #c27074;
+}
+
+.btnGithub:focus{
+	outline: 0;
+}
+
+.modal-title{
+	color: #213d4d;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 2.5em;
+}
+
+.modal-body p{
+	padding: 30px;
+}
+
+.modal-header{
+	border: none;
+}
+
+.modal-body .carousel{
+	margin: 0px 10px 10px 10px;
+}
+
+/*responsiveness*/
+
+
+@media screen and (max-width: 1100px){
+	.column{
+		width: 50%;
+	}
+
+	.hImage{
+		left: 50%;
+		top: -50%;
+		transform: translate(-50%, 50%);
+		width: 250px;
+	}
+
+	.whiteBox{
+		width: 80%;
+
+	}
+
+	.header{
+		height: 950px;
+	}
+
+	.header-text{
+		text-align: center;
+		width: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 50%;
+	}
+
+	.about{
+		left: 70%;
+		bottom: -150px;
+	}
+
+	.headerAbout{
+		font-size: 1rem;
+	}
+
+	#skills{
+		padding: 12% 10%;
+	}
+
+	
+}
+
+
+@media screen and (max-width: 900px){
+
+	.hImage{
+		top: -200px;
+		width: 200px;
+	}
+
+	.header{
+		height: 900px;
+	}
+
+	.column{
+		width: 100%;
+	}
+
+	#portfolio{
+		padding: 10% 10%;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	.column{
+		width: 100%;
+	}
+
+	.headerHallo{
+		font-size: 4rem;
+	}
+
+	.headerNaam{
+		font-size: 1.5rem;
+	}
+
+	.headerParagragh{
+		font-size: 16px;
+	}
+
+	.hImage{
+		width: 200px;
+		top: -200px;
+	}
+
+
+	#skills{
+		padding: 15% 10%;
+	}
+
+	.btnGithub{
+		width: 50%;
+	}
+
+
+}
+
+

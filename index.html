@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inge van Zetten - portfolio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|Mali|Sacramento&display=swap" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar fixed-top navbar-expand-md">
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">IvZ</a>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="fas fa-bars"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class="collapse justify-content-end navbar-collapse" data-toggle="collapse"  data-target=".navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link"  href="#overMij">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"  href="#skills">Vaardigheden</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"  href="#portfolio">Portfolio</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- header -->
+	<div class="header" id="overMij">
+
+		
+
+		<div class="whiteBox">
+			<div class="header-image">
+
+				<img src="images/computer7.jpg" class="hImage">
+
+			</div>
+
+			<div class="header-text">
+
+				<h1 class="headerHallo">Hallo!</h1>
+				<h2 class="headerNaam">Mijn naam is Inge</h2>
+				<p class="headerParagragh">Ik ben student Informatica en ik heb de ambitie om mobile en/of web developer te worden vanwege de combinatie van techniek en design. Bekijk mijn portfolio met schoolprojecten op deze site. </p>
+
+			</div>
+
+			<div class="about">
+				<h2 class="headerAbout">ABOUT</h2>
+			</div>
+
+		</div>
+	
+
+	</div>
+
+
+	<!-- skills -->
+	<section id="skills">
+
+		<h1 style="text-align: center;">Vaardigheden</h1>
+		<!-- skill bars -->
+		<div class="row skill-row">
+
+			<div class="skill-column col-lg-6">
+				<p class="skill-title">Java</p>
+				<div class="skill-container">
+					<div class="skill java">70%</div>
+				</div>
+
+				<p class="skill-title">PHP</p>
+				<div class="skill-container">
+					<div class="skill css">20%</div>
+				</div>
+
+				<p class="skill-title">CSS / HTML</p>
+				<div class="skill-container">
+					<div class="skill html">70%</div>
+				</div>
+
+			</div>
+			<div class="skill-column col-lg-6">
+				<p class="skill-title">Android</p>
+				<div class="skill-container">
+					<div class="skill android">60%</div>
+				</div>
+
+				<p class="skill-title">Javascript</p>
+				<div class="skill-container">
+					<div class="skill php">25%</div>
+				</div>
+
+				<p class="skill-title">SQL</p>
+				<div class="skill-container">
+					<div class="skill sql">60%</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- portfolio -->
+	<section id="portfolio">
+
+		<h1 class="portfolio-title">Portfolio</h1>
+
+		<div class="row">
+
+			<div class="column">
+				<div class="content">
+					<img class="product-image" src="images/schoolreview.png">
+				</div>
+				<button class="meerInfo" data-toggle="modal" data-target="#modal1">Schoolreview</button>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img class="product-image" src="images/desoos1.png">
+				</div>
+				<button class="meerInfo" data-toggle="modal" data-target="#modal2">De Soos</button>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img class="product-image" src="images/smartpool.png">
+				</div>
+				<button class="meerInfo" data-toggle="modal" data-target="#modal3">Smartpool</button>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<section id="footer">
+		<a href="https://nl.linkedin.com/in/ingevanzetten?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><i class="social-icon fab fa-linkedin fa-3x"></i></a>
+		<a href="https://github.com/IngevanZetten" target="_blank"><i class="social-icon fab fa-github-square fa-3x"></i></a>
+		<p class="footer-text">@ Inge van Zetten</p>
+	</section>
+
+
+	<!-- portfolio modals -->
+	<!-- modal schoolreview -->
+
+	<div class="modal fade" id="modal1">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- modal header -->
+				<div class="modal-header text-center">
+					<h3 class="modal-title w-100">Schoolreview</h3>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- modal body -->
+				<div class="modal-body text-center">
+
+					<!-- carousel -->
+					<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+						<!-- carousel content -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/schoolreview.png">
+							</div>
+							<div class="carousel-item">
+								<img src="images/schoolreview_beoordeel.png">
+							</div>
+							<div class="carousel-item">
+								<img src="images/schoolreview_overzicht_school.png">
+							</div>
+							<div class="carousel-item">
+								<img src="images/schoolreview_alle_scholen.png">
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+					<p>Schoolreview is een applicatie waarin scholen beoordeeld kunnen worden. Schoolreview heeft 2 doelen: schoolkiezers helpen een keuze te maken en de kwaliteit van het onderwijs op een school inzichtelijk te maken, zodat deze verbetert kan worden. De applicatie maakt gebruik van openbare JSON data van de overheid met informatie over scholen in Zeist en slaat de reviews op in een MySQL database.</p>
+					<button class="btnGithub" onclick="window.open('https://github.com/IngevanZetten/Schoolreview', '_blank');">Bekijk op Github</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- modal de soos -->
+
+	<div class="modal fade" id="modal2">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- modal header -->
+				<div class="modal-header text-center">
+					<h3 class="modal-title w-100">De Soos</h3>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- modal body -->
+				<div class="modal-body text-center">
+
+					<!-- carousel -->
+					<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+						<!-- carousel content -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/desoos1.png">
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+					<p>Het onderwerp van dit project was ouderenzorg. Na onderzoek bleek eenzaamheid een groot probleem te zijn onder ouderen. Daarom heb ik besloten een applicatie te maken waarin ouderen zich kunnen inschrijven voor speciaal geselecteerde activiteiten die zij samen met andere ingeschreven ouderen kunnen gaan ondernemen. De applicatie is gemaakt in JavaFX en maakt gebruik van een Oracle database.</p>
+					<button class="btnGithub" onclick="window.open('https://github.com/IngevanZetten/De-Soos', '_blank');">Bekijk op Github</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- modal smartpool -->
+
+	<div class="modal fade" id="modal3">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- modal header -->
+				<div class="modal-header text-center">
+					<h3 class="modal-title w-100">Smartpool</h3>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- modal body -->
+				<div class="modal-body text-center">
+
+					<!-- carousel -->
+					<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+						<!-- carousel content -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/smartpool.png">
+							</div>
+							<div class="carousel-item">
+								<img src="images/smartpool_rit.png">
+							</div>
+							<div class="carousel-item">
+								<img src="images/smartpool_giftshop.png">
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+					<p>Smartpool is een carpoolapplicatie die voortgekomen is uit een opdracht van het logistiek platform in Roosendaal. De opdracht was om de bereikbaarheid naar het bedreiventerrein 'Borchwerf' op een duurzame manier te verbeteren. De applicatie is bedoeld voor werknemers van het bedreiventerrein en heeft een beloningssysteem en competitie element om de werknemers te stimuleren om te gaan carpoolen. Smartpool is een android applicatie en maakt gebruik van een SQLite database. De applicatie is in samenwerking gemaakt met 3 andere studenten. </p>
+					<button class="btnGithub" onclick="window.open('https://github.com/sander123133/smartpool', '_blank');">Bekijk op Github</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
