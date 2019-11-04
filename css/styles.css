@@ -133,6 +133,10 @@ img{
 	background-color: white;
 }
 
+.skill-title{
+	text-align: center;
+}
+
 .skill-column{
 	padding:20px;
 }
@@ -352,17 +356,20 @@ img{
 	}
 
 	.hImage{
-		width: 200px;
+		width: 150px;
 		top: -200px;
 	}
 
-
 	#skills{
-		padding: 15% 10%;
+		padding: 18% 10%;
 	}
 
 	.btnGithub{
 		width: 50%;
+	}
+
+	.skill-title{
+		font-size: 20px;
 	}
 
 
