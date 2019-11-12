@@ -59,7 +59,7 @@ img{
 /*header*/
 .header{
 	background-image: -webkit-linear-gradient(180deg, white 50%, #40667C 50%);
-	height: 700px;
+	height: 710px;
 	position: relative;
 	margin-top: 50px;
 }
@@ -111,7 +111,6 @@ img{
 .headerAbout{
 	writing-mode: vertical-rl;
 	color: white;
-	text-decoration: underline;
 	background-color: #40667C;
 	padding: 30px 20px;
 	
@@ -213,6 +212,32 @@ img{
 	outline: 0;
 }
 
+.bounce-up{
+	opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.bounce-up.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
 
 /*footer*/
 
@@ -305,10 +330,6 @@ img{
 		bottom: -150px;
 	}
 
-	.headerAbout{
-		font-size: 1rem;
-	}
-
 	#skills{
 		padding: 12% 10%;
 	}
@@ -334,6 +355,10 @@ img{
 
 	#portfolio{
 		padding: 10% 10%;
+	}
+
+	.headerAbout{
+		font-size: 1.4em;
 	}
 
 }
@@ -378,6 +403,11 @@ img{
 
 	.portfolio-title{
 		font-size: 31px;
+	}
+
+
+	.headerAbout{
+		font-size: 1.2em;
 	}
 
 
