@@ -22,29 +22,26 @@ function fillBar(nummer){
 
 }
 
-
+//opties (vorwaarden) voor wanneer de callback functie aangeroepen moet worden
 var intersectionOptions = {
-  root: null,  // use the viewport
+  root: null,  // viewport als element gebruiken voor het checken van zichtbaarheid target
   rootMargin: '0px',
-  threshold: 1.0
+  threshold: 1.0 //als de target 100% zichtbaar is, roep dan de caalback aan. kan ook een array zijn
 }
 
+//callback functie die uitgevoerd wordt als de target volledig zichtbaar is
+//entries: lijst met objecten die informatie bevatten over de intersectie
 function intersectionCallback(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.intersectionRatio >= 1) {
 			console.log("Fully visible!");
 			for(var i = 0; i < skillList.length; i++){
-
 				fillBar(i);
-
 			}
-
-
-		} else {
-			console.log("Not fully visible!");
 		}
 	});
 }
+
 
 var observer = new IntersectionObserver(intersectionCallback, intersectionOptions);
 
